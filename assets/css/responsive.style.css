@@ -1,0 +1,112 @@
+@media (max-width:1200px) {
+    .chat-front {
+        width: 50%;
+    }
+
+    .conversation-container {
+        width: 50%;
+    }
+
+    .conversation {
+        width: 98%;
+    }
+
+
+    /* ===================================================*/
+    /* receiver info container design for responive */
+    /* ===================================================*/
+    #toggleReceiverContainerButton {
+        display: none;
+        position: absolute;
+        bottom: 10%;
+        left: 50%;
+        transform: translate(-50%, -10%);
+        font-size: 50px;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        line-height: 40px;
+        background-color: black;
+        z-index: 10;
+    }
+
+    .conversation-container {
+        position: relative;
+    }
+
+    .receiver-info-container {
+        width: 100% !important;
+        height: 00%;
+        position: absolute;
+        /* /* margin-top: 10px; */
+        backdrop-filter: blur(10px);
+    }
+
+    /* navbar design starts */
+    .nav-item {
+        padding: 0 10px;
+    }
+
+    .nav-link {
+        font-size: 14px;
+    }
+
+
+    .nav-user div span:nth-child(1) {
+        font-size: 14px;
+    }
+
+    .nav-user div span:nth-child(2) {
+        font-size: 13px;
+    }
+
+    .nav-user-img {
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        object-fit: cover;
+    }
+
+    .logo-img {
+        width: 70px;
+    }
+
+    .chat-nav-item {
+        padding: 10px 20px;
+    }
+}
+
+
+/*  */
+@media(max-width:1024px) {
+
+    /* navbar design starts from here */
+    .navbar-nav {
+        display: none;
+    }
+
+    .conversation-container {
+        display: none;
+    }
+
+    .chat-nav {
+        grid-area: nav;
+    }
+
+    .search-box-div {
+        grid-area: search;
+    }
+
+    .chat-list-div {
+        grid-area: chats;
+    }
+
+    .chat-front {
+        display: grid;
+        grid-template-areas:
+            'search'
+            'nav'
+            'chats'
+        ;
+    }
+}
