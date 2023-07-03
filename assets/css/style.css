@@ -666,3 +666,10 @@ main {
     line-height: 40px;
 }
 
+.chat-back{
+    display: none;
+    background: transparent;
+    border: 1px solid var(--activeColor);
+    padding: 8px 20px;
+    color: white;    
+}
